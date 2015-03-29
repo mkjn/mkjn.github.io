@@ -11,17 +11,17 @@
    ========================================================================== */
 
 html {
-    font-family: Source Code Pro, Courier, monospace;
+    font-family: 'Lato', Helvetica, Arial, sans serif;
 	color: #e26805;
     font-size: 1em;
     line-height: 1.4;
-	background-color: #222; 
-    background-image: -ms-linear-gradient(top, #111, #222); 
-    background-image: -moz-linear-gradient(top, #111, #222); 
-    background-image: -o-linear-gradient(top, #111, #222);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#111), to(#222));
-    background-image: -webkit-linear-gradient(top, #111, #222);
-    background-image: linear-gradient(top, #111, #222);
+	background-color: #333; 
+    background-image: -ms-linear-gradient(top, #111, #333); 
+    background-image: -moz-linear-gradient(top, #111, #333); 
+    background-image: -o-linear-gradient(top, #111, #333);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#111), to(#333));
+    background-image: -webkit-linear-gradient(top, #111, #333);
+    background-image: linear-gradient(top, #111, #333);
     background-repeat: repeat-x; 
     background-size: 100% auto;
 }
@@ -107,20 +107,188 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, button, input, select, textarea { font-family: 'Lato', sans-serif; font-weight: 400; color: #999999; }
+
+h1 {
+    padding-bottom: 5px;
+    color: #e26805;
+    font-weight: 100;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    padding-bottom: 5px;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+    padding-bottom: 5px;
+    color: #ffffff;
+    font-weight: 100;
+    text-transform: uppercase; 
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+h4 {
+    padding-bottom: 5px;
+    color: #e26805;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    margin-top: 50px;
+    padding-bottom: 5em;
+    font-size: 0.75em;
+    color: #555555;
+}
+
+p {
+    line-height: 1.75em;
+    margin-bottom: 1.75em;
+}
+
+#footercol1 {
+    margin-left: -255px;
+    float: left;
+    width: 200px;
+}
+
+#footercol2 {
+    float: left;
+    width: 600px;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { 
+    text-decoration: none; 
+    color: #999999;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 2px;
+}
+
+a:visited { 
+    color: #E3D7BF; 
+    text-decoration: none;
+    border-bottom: none;
+}
+
+a:hover { 
+    color: #e26805; 
+    text-decoration: none;
+    border-bottom: 1px solid #e26805;
+    padding-bottom: 2px;
+}
+
+a:focus { outline: thin dotted; }
+
+a.title:link { text-decoration: none; color: #e26805; border-bottom: none; }
+a.title:visited { text-decoration: none; color: #e26805; border-bottom: none; }
+a.title:hover { text-decoration: none; color: #ffffff; border-bottom: none; }
+a.title:focus { outline: none; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
 
 
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { 
+    margin: 1em 40px;
+    padding: 2px 25px 2px 25px;
+    border-left: 1px solid #e26805;
+    color: #999;
+    font-size: 85%;
+}
+
+dfn { font-style: italic; }
+
+hr { display: block ; height: 1px; border: 0; border-top: 1px solid #e26805; margin: 2.5em 0; width: 50%; margin-left: auto; margin-right: auto; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
 
 
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { 
+    margin: 1em 0; 
+    padding: 0 0 0 36px;     
+}
+
+ul
+{
+    list-style: none;
+}
+
+ul li:before {
+	content: "\002B \0020";
+	color: #e26805; 
+    text-shadow: 1px 1px 0px #000;
+	}
+
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
 
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+
+img { border: 3px solid #555555; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
 
 
+/* =============================================================================
+   Figures
+   ========================================================================== */
 
+figure { margin: 0; }
 
+/* =============================================================================
+   Tables
+   ========================================================================== */
 
-
-
-
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
 
 
 /* ==========================================================================
