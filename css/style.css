@@ -12,7 +12,7 @@
 
 html {
     font-family: 'Lato', Helvetica, Arial, sans serif;
-	color: #e26805;
+	color: #999999s;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.4;
@@ -108,7 +108,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html, button, input, select, textarea { font-family: 'Lato', sans-serif; font-weight: 400; color: #999999; }
+body, button, input, select, textarea { font-family: 'Lato', sans-serif; font-weight: 400; color: #999999; }
 
 h1 {
     padding-bottom: 5px;
@@ -125,15 +125,15 @@ h2 {
 
 h3 {
     padding-bottom: 5px;
-    color: #ffffff;
-    font-weight: 100;
-    text-transform: uppercase; 
+    color: #e26805;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
 }
 
 h4 {
     padding-bottom: 5px;
-    color: #e26805;
+    color: #ffffff;
+    font-weight: 100;
+    text-transform: uppercase; 
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -145,7 +145,6 @@ footer {
 }
 
 p {
-    line-height: 1.75em;
     margin-bottom: 1.75em;
 }
 
@@ -213,7 +212,7 @@ blockquote {
 
 dfn { font-style: italic; }
 
-hr { display: block ; height: 1px; border: 0; border-top: 1px solid #e26805; margin: 2.5em 0; width: 50%; margin-left: auto; margin-right: auto; }
+/* hr { display: block ; height: 1px; border: 0; border-top: 1px solid #e26805; margin: 2.5em 0; width: 50%; margin-left: auto; margin-right: auto; } */
 
 ins { background: #ff9; color: #000; text-decoration: none; }
 
